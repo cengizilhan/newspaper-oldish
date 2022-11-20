@@ -1,9 +1,9 @@
 <template>
-  <div class="collumn">
+  <div class="collumn news-card">
     <div class="head">
       <span class="headline hl1">{{news.name}}</span>
       <p>
-        <span class="headline hl2"
+        <span class="headline hl2" style="display:none;"
           >Let go your conscious self and act on instinct</span
         >
       </p>
@@ -14,25 +14,9 @@
     <figure class="figure">
       <img class="media" :src=news.image alt="" />
       <figcaption class="figcaption">
-        "This time, let go your conscious self and act on instinct."
+        {{news.name}}
       </figcaption>
     </figure>
-    <p>
-      Leave that to me. Send a distress signal, and inform the Senate that all
-      on board were killed
-      <span class="citation"
-        >"Don't under&shy;estimate the Force. I suggest you try it again,
-        Luke."</span
-      >
-      This time, let go your conscious self and act on instinct. In my
-      experience, there is no such thing as luck. You're all clear, kid. Let's
-      blow this thing and go home!
-    </p>
-    <p>
-      You don't believe in the Force, do you? Partially, but it also obeys your
-      commands. The plans you refer to will soon be back in our hands. As you
-      wish.
-    </p>
   </div>
 </template>
 

@@ -2,17 +2,19 @@ body{
     font-family: 'Droid Serif', serif;
     font-size: 14px;
     color: #2f2f2f;
-    background-color: #f9f7f1;
+    /*background-color: #f9f7f1;*/
+    background-color: #f6d1a45c;
 }
 header{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 80px;
-    text-transform: capitalize;
+ 
     display: inline-block;
     line-height: 72px;
     margin-bottom: 20px;
-color:#ec3734;
+    color:#ec3734;
+
 }
 p{
     margin-top: 0;
@@ -26,6 +28,11 @@ p{
 }
 
 .headerobjectswrapper{
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .subhead{
@@ -46,27 +53,52 @@ p{
     margin: 0 50px 20px -360px;
 }
 .content{
-    font-size: 0;
-    line-height: 0;
-    word-spacing: -.31em;
+    
+    
     display: inline-block;
     margin: 30px 2% 0 2%;
+    width:90%;
 
 
 }
-.collumns{
-
-}
-
-.collumn{
+.content,
+p {
+    word-spacing: normal;
     font-size: 14px;
     line-height: 20px;
-    width: 17.5%;
-    display: inline-block;
+}
+.collumns{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(24%,1fr));
+    
+    
+}
+@media screen and (max-width: 900px) {
+    .collumns{
+        grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+    }
+}
+
+
+.collumn{
+
+    max-height: fit-content;
+    height: fit-content;
     padding: 0 1% 0 1%;
+  
+    display: inline-block;
+    
     vertical-align: top;
-    margin-bottom: 50px;
+/*    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    
+    
     transition: all .7s;
+    */
+    
 }
 .collumn + .collumn { 
   border-left: 1px solid #2f2f2f;
@@ -251,13 +283,13 @@ p{
 }
 @media only all and (max-width: 1200px) {
     .collumn{
-        width: 31%;
+        
     }
 
 }
     @media only all and (max-width: 900px) {
     .collumn{
-        width: 47%;
+        
     }
 
 }
