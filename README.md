@@ -6,5 +6,5 @@ HTML Template: https://codepen.io/silkine/pen/QWBxVX
 JS Framework: Vue2
 
 
-![SS](./uploads/ss.png)
+![SS](./ss.png)
 
